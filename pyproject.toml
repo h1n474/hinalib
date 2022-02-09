@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hinalib"
+version = "0.0.1"
+description = "Tools used at work and more"
+authors = ["hinata <mail@hinatamasaki.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tqdm = "^4.62.3"
+pyvips = "^2.1.16"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^1.6.0"
+
+[tool.poetry.scripts]
+mz = 'hinalib.zip:cli'
+cs = 'hinalib.montage:cli'
+
+[build-system]
+requires = ["setuptools","poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
